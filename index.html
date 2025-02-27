@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/weather.js"></script>
+    <title>weatherapp</title>
+</head>
+
+<body>
+    <div class="load flex2">
+        <div class="greet flex font3">
+            <p>Hello <span>World</span></p>
+        </div>
+        <div class="animate flex2 font3">
+            <p class="font2">Your</p>
+            <p><span>W</span>eathe<Span>R</Span></p>
+        </div>
+    </div>
+    <main class="hide">
+        <div class="mn-cont flex2">
+            <div class="loc">
+                <img src="./img/location-dot-solid.svg" alt="">
+            </div>
+            <div class="content flex2 font3">
+                <p class="error"></p>
+                <div class="input flex">
+                    <p>Check your weather</p>
+                    <input type="text" placeholder="Enter Location" id="location">
+                    <button class="search">
+                        <img src="./img/magnifying-glass-solid.svg" alt="">
+                    </button>
+                </div>
+                <div class="hide infoin">
+                    <div class="info flex2">
+                        <div class="timer flex">
+                            <p><span class="hr">00</span>:</p>
+                            <p><span class="min">00</span></p>
+                            <p><span class="sec">00</span>sec <span class="period">am</span></p>
+                        </div>
+                        <div class="weimg">
+                            <img class="changewe">
+                        </div>
+                        <div class="detail font4 flex2">
+                            <div class="rwe flex2">
+                                <p class="weather">Rain</p>
+                                <p class="wedescription">light rain</p>
+                            </div>
+                            <div class="weothers flex">
+                                <div class="inb flex">
+                                    <p>pressure: <span class="pressure">0</span>hpa</p>
+                                    <p>Temprature: <span class="temp">0</span>k</p>
+                                    <p>Humidity: <span class="humidity">0</span>%</p>
+                                    <p>Sea level: <span class="sealevel">0</span>hpa</p>
+                                </div>
+                                <div class="inb flex">
+                                    <p>Sunrise: <span class="sunrise">0</span></p>
+                                    <p>Sunset: <span class="sunset">0</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
