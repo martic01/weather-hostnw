@@ -117,14 +117,16 @@ function waiting(city) {
 
         $('.infoin').slideDown();
         $('.error').text(``);
+    
+
     }, (error) => {
         let location = $('#location').val();
-        if (trimed(location) === '') {
-            $('.error').text(``);
+        if (trimed(location) === '' || Number(location)) {
+            $('.error').text(`Field cannot be empty or contain numbers`).css('color', 'white');
             $('.infoin').slideUp();
             document.querySelector('.content').style.backgroundImage = `url(${imgRainBg})`;
         } else {
-            $('.error').text(`There was an error processing your request: ${error}`);
+            $('.error').text(`Please confirm Location, City not found`).css('color', 'red');
             $('.infoin').slideUp();
             document.querySelector('.content').style.backgroundImage = `url(${imgRainBg})`;
         }
