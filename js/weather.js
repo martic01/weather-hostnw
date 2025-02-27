@@ -57,7 +57,7 @@ function loader() {
 function waiting(city) {
     let promise = new Promise(function (resolve, reject) {
         let request = new XMLHttpRequest();
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bb3c2096c199260e300c0a53f3ed11dc`;
         request.onload = function () {
             if (this.status === 200) {
                 resolve(request.response);
